@@ -1,4 +1,4 @@
-namespace day2blogbackend.Models.DTO;
+namespace TaskTrackerBackend.Models.DTO;
 
     public class UserIdDTO
     {
