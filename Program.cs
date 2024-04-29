@@ -1,5 +1,6 @@
 using TaskTrackerBackend.Services;
 using TaskTrackerBackend.Services.Context;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserService>();
+
+var connectionString = builder.Configuration.GetConnectionString("MyBlogString");
 
 builder.Services.AddDbContext<DataContext>(Options => Options.UseSqlServer(connectionString));
 
