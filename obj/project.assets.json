@@ -3853,19 +3853,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aidan\\.nuget\\packages\\": {}
+    "C:\\Users\\Orteg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
+      "projectUniqueName": "C:\\Users\\Orteg\\Documents\\GitRepository\\TaskTrackerBack\\TaskTrackerBackend.csproj",
       "projectName": "TaskTrackerBackend",
-      "projectPath": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
-      "packagesPath": "C:\\Users\\Aidan\\.nuget\\packages\\",
-      "outputPath": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\obj\\",
+      "projectPath": "C:\\Users\\Orteg\\Documents\\GitRepository\\TaskTrackerBack\\TaskTrackerBackend.csproj",
+      "packagesPath": "C:\\Users\\Orteg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Orteg\\Documents\\GitRepository\\TaskTrackerBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aidan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Orteg\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3941,7 +3941,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
