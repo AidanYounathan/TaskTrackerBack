@@ -28,30 +28,26 @@ namespace TaskTrackerBackend.Services
 
         public string GenerateImgID()
         {
-            string[] abcArr = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-            Random random = new Random();
+           Random random = new Random();
 
-            if (random.Next(0, 2)== 0)
-            {
-
+            
+        
+            
+            const string hexDigits = "0123456789ABCDEF";
+            string code = "";
+           for(int i = 0; i < 3; i++){
+                int index = random.Next(hexDigits.Length);
+                code += hexDigits[index];
             }
 
-            int firstLetterIndex  = random.Next(0, abcArr.Length);
+            return "#" + code;
+        
 
-            string firstLetter = abcArr[firstLetterIndex];
+        
 
-            string remainingDigits = "";
-                for (int i = 0; i < 4; i++)
-                {
-                    if (random.Next(0, 2)== 0)
-                    {
-                        int i 
-                    }
-                    
 
-            return imgID;
-
-        } }
+        } 
+        
 
 
         public bool CreateUser(CreateAccountDTO UserToAdd)
@@ -67,13 +63,13 @@ namespace TaskTrackerBackend.Services
                     newUser.ID = UserToAdd.ID;
 
                     newUser.Username = UserToAdd.Username;   
-                    newUser.Password = "Cant see it";
-
-
+                    newUser.Password = "";
                     newUser.Salt = hashPassword.Salt;
                     newUser.Hash = hashPassword.Hash;  
                     newUser.AccountCreated = true;
                     newUser.BoardInfo = new List<BoardModel>();
+                    newUser.ProfileImg = UserToAdd.ProfileImg;
+
 
                     _context.Add(newUser);
 
@@ -168,6 +164,20 @@ namespace TaskTrackerBackend.Services
         {
             _context.Update<UserModel>(userToUpdate);
             return _context.SaveChanges() !=0 ;
+        }
+
+            public bool UpdateProfileImg(int id, string profileImg)
+        {   
+            UserModel foundUser = GetUserById(id);
+
+             bool result = false;
+             if(foundUser != null)
+             {
+                foundUser.ProfileImg = profileImg;
+                _context.Update<UserModel>(foundUser);
+                result = _context.SaveChanges() !=0 ;
+             }
+             return result;
         }
 
         public bool UpdateUsername(int id, string username)

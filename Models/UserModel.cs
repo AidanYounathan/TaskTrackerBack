@@ -12,7 +12,7 @@ namespace TaskTrackerBackend.Models;
         public string? ProfileImg {get; set; }
         public bool? AccountCreated { get; set; }
 
-        public string? userColor { get; set; }
+        
         public string? joinDate { get; set; }
 
         public UserModel()
