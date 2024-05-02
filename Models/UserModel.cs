@@ -6,6 +6,13 @@ namespace TaskTrackerBackend.Models;
         public string? Username { get; set; }
         public string? Salt { get; set; }
         public string? Hash { get; set; }
+        public string? BoardIDs { get; set; }
+        public List<BoardModel>? BoardInfo { get; set; }
+        public string? ProfileImg {get; set; }
+        public bool? AccountCreated { get; set; }
+
+        public string? userColor { get; set; }
+        public string? joinDate { get; set; }
 
         public UserModel()
         {
