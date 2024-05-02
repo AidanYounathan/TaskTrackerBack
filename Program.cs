@@ -19,7 +19,7 @@ builder.Services.AddDbContext<DataContext>(Options => Options.UseSqlServer(conne
 builder.Services.AddCors(options => options.AddPolicy("BlogPolicy", 
 builder => {
     // add address when front end is set up
-    builder.WithOrigins("http://localhost:3000", "http:localhost:5105")
+    builder.WithOrigins("http://localhost:3000", "http:localhost:5105", "https://tasktracker-sprint-front-end.vercel.app/")
     .AllowAnyHeader()
     .AllowAnyMethod();
 }));
