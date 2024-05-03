@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj": {}
+    "G:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj": {}
   },
   "projects": {
-    "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj": {
+    "G:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
+        "projectUniqueName": "G:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
         "projectName": "TaskTrackerBackend",
-        "projectPath": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
+        "projectPath": "G:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\TaskTrackerBackend.csproj",
         "packagesPath": "C:\\Users\\Aidan\\.nuget\\packages\\",
-        "outputPath": "E:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\obj\\",
+        "outputPath": "G:\\TheRealmOfNaughtBeggotenKnowledge\\Level4\\Assignments\\TaskTrackerBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aidan\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
